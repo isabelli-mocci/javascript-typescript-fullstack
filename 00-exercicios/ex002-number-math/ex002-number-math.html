@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício com Number e Math</title>
+  <style>
+    body {
+      font-size: xx-large;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script>
+    // variável global
+    const numeroBase = Number(prompt('Digite um número: '))
+
+    // aponta o número
+    document.body.innerHTML += `Seu número é <strong>${numeroBase}</strong>! <br>`
+
+    // raiz quadrada
+    document.body.innerHTML += `A raiz quadrada do seu número é <strong>${numeroBase ** 0.5}</strong>! <br>`
+
+    // se é decimal ou inteiro
+    document.body.innerHTML += `O número <strong>${numeroBase}</strong> é inteiro? R: <strong>${(Number.isInteger(numeroBase))}</strong>! <br>`
+
+    // se é NaN
+    document.body.innerHTML += `O número <strong>${numeroBase}</strong> é NaN?  R:  <strong>${Number.isNaN(numeroBase)}</strong>! <br>`
+
+    // arredondando pra baixo
+    document.body.innerHTML += `O número <strong>${numeroBase}</strong> arredondado pra ↓baixo é: <strong>${Math.floor(numeroBase)}</strong>! <br>`
+
+    // arredondando pra cima
+    document.body.innerHTML += `O número <strong>${numeroBase}</strong> arredondado pra cima↑ é: <strong>${Math.ceil(numeroBase)}</strong>! <br>`
+
+    // com 2 casas decimais
+    document.body.innerHTML += `O número <strong>${numeroBase}</strong> com duas casas decimais é: <strong>${numeroBase.toFixed(2)}</strong>! <br>`
+
+  </script>
+</body>
+
+</html>
