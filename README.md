@@ -1,4 +1,3 @@
-# javascript-typescript-fullstack
 # Full Stack JavaScript & TypeScript Course - My Learning Journey
 
 Welcome to my personal learning repository, where I document my journey through a comprehensive **Full Stack JavaScript & TypeScript** course. This repository showcases everything I’ve studied, from foundational JavaScript and TypeScript to building complete projects in both front-end and back-end, using the most relevant technologies in the industry.
