@@ -3,8 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 :root {
-  --primary-color: rgb(17, 86, 102);
-  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color: teal;
+  --primary-color-darker: rgb(0, 96, 96);
+  --text-color: #fff;
+  --background-color: #f0f8f8;
 }
 
 * {
@@ -16,46 +18,55 @@ body {
   margin: 0;
   padding: 0;
   background: var(--primary-color);
-  font-family: 'Open sans', sans-serif;
-  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
   line-height: 1.5em;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
   max-width: 640px;
-  margin: 50px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
+  background: var(--background-color);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-form input, form label, form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
-form input {
-  font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
+.date {
+  font-size: 1.5em;
+  color: var(--primary-color-darker);
+  margin-top: 20px;
+  font-weight: bold;
 }
 
-form input:focus {
-  outline: 1px solid var(--primary-color);
+.date::before {
+  content: "🕰️ ";
 }
 
-form button {
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
-}
-
-form button:hover {
-  background: var(--primary-color-darker);
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1em;
+  }
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .date {
+    font-size: 1.2em;
+  }
 }
