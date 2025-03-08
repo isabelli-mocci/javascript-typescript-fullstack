@@ -1,0 +1,156 @@
+/* =================== RESET BÁSICO =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #eaf6f6; /* Fundo suave */
+  color: #065f5f; /* Texto principal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* =================== CONTAINER PRINCIPAL =================== */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 95%;
+  overflow-y: auto; 
+}
+
+
+/* =================== TÍTULOS =================== */
+h1 {
+  color: #008080; /* Teal */
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* =================== TABELA IMC =================== */
+.tabela-imc {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tabela-imc th, .tabela-imc td {
+  border: 1px solid #008080;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabela-imc th {
+  background: #008080;
+  color: white;
+  font-weight: bold;
+}
+
+.tabela-imc tr:nth-child(even) {
+  background: #f0fdfa;
+}
+
+/* =================== FORMULÁRIO =================== */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #065f5f;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #008080;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #005757;
+  box-shadow: 0px 0px 8px rgba(0, 128, 128, 0.3);
+}
+
+/* =================== BOTÃO =================== */
+button {
+  width: 100%;
+  background: #008080;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #005757;
+  transform: scale(1.05);
+}
+
+button:active {
+  background: #004040;
+  transform: scale(0.98);
+}
+
+/* =================== RESULTADO =================== */
+#resultado {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #065f5f;
+  padding: 10px;
+}
+
+/* Estilo para mensagens de sucesso */
+.resultado-sucesso {
+  background-color: #b2f5ea;
+  color: #065f5f;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  border: 2px solid #008080;
+}
+
+/* Estilo para mensagens de erro */
+.resultado-erro {
+  background-color: #ffe6e6;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  border: 2px solid red;
+}
+
+/* =================== IMAGEM DO RESULTADO =================== */
+#img {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#img img {
+  width: 150px;
+  height: auto;
+  display: none;  
+}
