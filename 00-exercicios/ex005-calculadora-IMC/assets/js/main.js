@@ -1,14 +1,16 @@
 // =============================================================
 // Curso de JavaScript e TypeScript
 // Profº Luiz Otávio Miranda
-// Ex016 - Projeto de Calculadora de IMC
+// Ex005 - Projeto de Calculadora de IMC
 // Isabelli Cristina Mocci - 07/03/2025
 // =============================================================
 
 /*
     🔹 Objetivo:
 
-    Usuário informa o peso e a altura e a resposta ao IMC aparece embaixo do botão de calcular. Se o usuário não digitar nada, exibir "PREENCHA OS DADOS E TENTE NOVAMENTE.". Se o usuário digitar o peso, mas não um peso ou altura inválidos informar: "DADOS INVÁLIDOS, TENTE NOVAMENTE!"
+    Usuário informa o peso e a altura e a resposta ao IMC aparece embaixo do botão de calcular. 
+    Se o usuário não digitar nada, exibir "PREENCHA OS DADOS E TENTE NOVAMENTE". 
+    Se o usuário digitar o peso, mas não um peso ou altura inválidos informar: "DADOS INVÁLIDOS, TENTE NOVAMENTE!"
 */
 
 function meuEscopo() {
