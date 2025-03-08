@@ -1,7 +1,7 @@
 // =============================================================
 // Curso de JavaScript e TypeScript
 // Profº Luiz Otávio Miranda
-// Ex001 - Usando Const e Let
+// Ex002 - Usando Const e Let
 // Isabelli Cristina Mocci - 05/03/2025
 // =============================================================
 
