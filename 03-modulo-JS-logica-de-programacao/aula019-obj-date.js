@@ -51,11 +51,45 @@ console.log("Milissegundos:", data.getMilliseconds());
 // 🔹 Formatando Datas
 // =============================================================
 
-const dataFormatada = `${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`;
+const dataFormatada = `${agora.getDate()}/${agora.getMonth() + 1}/${agora.getFullYear()}`;
 console.log("Data formatada (DD/MM/AAAA):", dataFormatada);
-console.log("Formato PT-BR:", data.toLocaleDateString("pt-BR"));
-console.log("Formato US:", data.toLocaleDateString("en-US"));
+console.log("Formato PT-BR:", agora.toLocaleDateString("pt-BR"));
+console.log("Formato US:", agora.toLocaleDateString("en-US"));
 
+
+// Data completa formatada para uso no terminal com recursos nativos:
+console.log("Data completa formatada:", agora.toLocaleDateString("pt-BR", {
+    weekday: "long",   // nome do dia da semana completo → "domingo"
+    year: "numeric",   // ano completo → 2025
+    month: "long",     // mês completo → março
+    day: "numeric"     // dia da semana → 8
+  }));
+
+// Data completa formatada para uso em navegador com recursos nativos:
+// Exemplo:
+// const h1 = document.querySelector("h1");
+// h1.innerHTML = agora.toLocaleDateString("pt-BR", {
+//   dateStyle: "full",
+//   timeStyle: "short",
+// });
+
+function diaSemana(semanaDia) {
+    const dias = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+    return dias[semanaDia];
+}
+
+// A função acima recebe o valor de agora.getDay(), que retorna 0 para domingo, 1 para segunda-feira, etc.) e retorna o nome do dia da semana correspondente (ex: "Domingo", "Segunda-feira").
+
+function nomeMes(numeroMes) {
+    const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    return meses[numeroMes];
+}
+
+// Essa função recebe o valor de agora.getMonth(), que vai de 0 a 11 e retorna o nome do mês correspondente (ex: "Janeiro", "Fevereiro", etc.).
+
+
+console.log("Dia da Semana:", diaSemana(agora.getDay()));
+console.log("Mês Atual:", nomeMes(agora.getMonth()));
 // =============================================================
 // 🔹 Alterando Datas
 // =============================================================
