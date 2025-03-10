@@ -2,7 +2,7 @@
 // Curso de JavaScript e TypeScript
 // Profº Luiz Otávio Miranda
 // Ex023 - Estrutura de Repetição: For Clássico
-// Isabelli Cristina Mocci - 07/03/2025
+// Isabelli Cristina Mocci - 09/03/2025
 // =============================================================
 
 /*
