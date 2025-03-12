@@ -2,7 +2,7 @@
 // Curso de JavaScript e TypeScript
 // Profº Luiz Otávio Miranda
 // Ex023 - Atribuição via Desestruturação (Objetos)
-// Isabelli Cristina Mocci - 07/03/2025
+// Isabelli Cristina Mocci - 08/03/2025
 // =============================================================
 
 /*

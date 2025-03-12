@@ -1,0 +1,52 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7f7;
+  color: #004d4d;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Container principal */
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #007777;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização dos elementos dinâmicos */
+p,
+footer,
+section,
+aside {
+  background: #009999;
+  color: #ffffff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+p:hover,
+aside:hover,
+footer:hover,
+section:hover {
+  background: #007777;
+  transition: 0.3s ease-in-out;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+div {
+  background-color: #007777;
+}
+
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
