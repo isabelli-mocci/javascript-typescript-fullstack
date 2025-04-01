@@ -9,7 +9,7 @@
     🔹 Funções em JavaScript:
 
     Funções em JavaScript são `first-class citizens`
-      ⮡ podem ser tratadas como valores, então podem ser:
+      ⮡ podem ser manipuladas como valores, então podem ser:
         → Atribuídas a variáveis
         → Passadas como argumentos para outras funções
         → Retornadas de outras funções
@@ -20,7 +20,7 @@
           ⮡ `hoisting`: declarações de funções são "elevadas" para o topo do escopo, permitindo chamá-las antes da declaração
     → 2. Expressão de Função: atribuída a uma variável (s/ hoisting)
     → 3. Arrow Function: sintaxe reduzida, não tem seu próprio `this`
-    → 4. Função como Método: Quando uma função pertence a um objeto
+    → 4. Função como Método: função que pertence a um objeto (tem acesso ao `this`)
 
 */
 
@@ -29,7 +29,7 @@
 // =============================================================
 
 /*
-  ❓É feita com a palavra `function` + nome + parâmetros + bloco de código. 
+  ❓ Feita com a palavra `function` + nome + parâmetros + bloco de código. 
 
     Exemplo:
 */
@@ -45,9 +45,9 @@ function saudacao(nome) {
   // =============================================================
   
   /*
-    ❓É quando uma função é atribuída a uma variável. 
-      ⮡ função anônima (não possui um nome);
-      ⮡ só pode ser chamada após a sua declaração ;
+    ❓ É quando uma função é atribuída a uma variável.
+      ⮡  função anônima (não possui um nome)
+      ⮡  só pode ser chamada após a sua declaração 
   
       Exemplo:
   */
@@ -64,6 +64,7 @@ function saudacao(nome) {
   
   /*
     ❓São uma forma mais curta de escrever funções em JavaScript.
+      ⮡  Não possuem `this` próprio, herdando o contexto léxico.
   
       Exemplo:
   */
@@ -79,6 +80,7 @@ function saudacao(nome) {
   /*
     ❓Funções podem ser usadas como `métodos` de objetos.
       ⮡ `método` = função que pertence a um objeto
+      ⮡  tem acesso ao `this`
   
       Exemplo:
   */
