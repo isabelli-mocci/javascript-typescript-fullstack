@@ -51,13 +51,18 @@ function saudacao(nome) {
   
       Exemplo:
   */
-  
-  const saudacaoExpressao = function(nome) {
-    return `Oi, ${nome}!`;
-  };
-  
-  console.log(saudacaoExpressao("Matheus")); // "Oi, Matheus!"
-  
+
+  const isaProgramando = function() { // ← expressão de função
+    console.log('🖥️ A Isa está codando sem parar! 💻✨');
+};
+
+function executarRotina(rotina) { // ← função recebe outra função como argumento
+    console.log('⏳ Preparando para executar a rotina da Isa...');
+    rotina();
+}
+
+executarRotina(isaProgramando);
+
   // =============================================================
   // 🔹 Arrow Functions (sintaxe reduzida)
   // =============================================================
