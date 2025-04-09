@@ -1,0 +1,33 @@
+:root {
+  /* Principal Color */
+  --color-background: linear-gradient(323deg, #fcd0ee, #ccdafa);
+
+  /* Text Colors */
+  --color-text: #5a5a5a;
+  --color-text-links: #9a24c9;
+
+  /* Light Calculator Colors */
+  --color-button-light: #fff;
+  --color-calculator-light: #f9f3fb;
+  --color-numbers-light: #ababab;
+  --color-screen-light: #fff;
+
+  /* Dark Calculator Colors */
+  --color-button-dark: #363636;
+  --color-calculator-dark: #666169;
+  --color-numbers-dark: #d7d7d7;
+  --color-screen-dark: #363636;
+
+  /* Hover Calculator Colors */
+  --color-button-pink: #e499d3;
+  --color-button-hover-pink: #a35591,
+  --color-button-hover-light: #eaebec;
+  --color-button-hover-dark: #474747;
+
+  /* Typography */
+  --font-family-base: 'PP Neue Montreal Book', Tahoma, sans-serif;
+
+  /* Others */
+  --border-radius: 6px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
