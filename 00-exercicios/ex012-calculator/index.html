@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="description" content="A simple and efficient calculator for basic arithmetic operations.">
+  <meta name="keywords" content="calculator, arithmetic, math, web app, JavaScript, front-end, web development">
+  <meta name="author" content="Isabelli Cristina Mocci">
+  <meta name="copyright" content="Isabelli Mocci 2025">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="Calculator" />
+  <meta name="application-name" content="Calculator" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Calculator - Basic Arithmetic Operations" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://isabelli-mocci.github.io/calculator/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:description" content="A simple and efficient calculator for basic arithmetic operations." />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+
+  <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="./styles/root.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="stylesheet" href="./styles/dark-mode.css">
+  <link rel="stylesheet" href="./styles/calculator.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="canonical" href="https://isabelli-mocci.github.io/calculator/" />
+
+  <title>Calculator</title>
+</head>
+
+<body>
+  <!-- TOGGLE THEME -->
+  <div class="theme-box">
+    <input type="checkbox" id="toggle-theme" aria-label="Toggle dark mode" />
+    <label for="toggle-theme" class="toggle-switch">
+      <span class="toggle-thumb"></span>
+    </label>
+  </div>
+
+  <!-- CALCULATOR -->
+  <main id="calculator">
+    <div class="calculator-box">
+
+      <!-- Display Screen -->
+      <div class="display">
+        <input type="text" class="display-screen" readonly />
+      </div>
+
+      <!-- Calculator Buttons -->
+      <div class="button-grid">
+        <button class="calculator-button clear" id="clear" aria-label="clear">c</button>
+        <button class="calculator-button" aria-label="open parenthesis">(</button>
+        <button class="calculator-button" aria-label="close parenthesis">)</button>
+        <button class="calculator-button" aria-label="divide">÷</button>
+
+        <button class="calculator-button" aria-label="seven">7</button>
+        <button class="calculator-button" aria-label="eight">8</button>
+        <button class="calculator-button" aria-label="nine">9</button>
+        <button class="calculator-button" aria-label="multiply">×</button>
+
+        <button class="calculator-button" aria-label="four">4</button>
+        <button class="calculator-button" aria-label="five">5</button>
+        <button class="calculator-button" aria-label="six">6</button>
+        <button class="calculator-button" aria-label="minus">-</button>
+
+        <button class="calculator-button" aria-label="one">1</button>
+        <button class="calculator-button" aria-label="two">2</button>
+        <button class="calculator-button" aria-label="three">3</button>
+        <button class="calculator-button" aria-label="plus">+</button>
+
+        <button class="calculator-button" aria-label="decimal point">.</button>
+        <button class="calculator-button" aria-label="zero">0</button>
+        <button class="calculator-button backspace" id="backspace" aria-label="backspace"><span
+            class="material-symbols-outlined">backspace</span></button>
+        <button class="calculator-button equals" id="equals" aria-label="equals">=</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p>Made with 💜 by Isabelli Mocci | <span id="year"></span></p>
+
+    <div class="footer-links">
+      <a class="footer-link" href="https://www.linkedin.com/in/isabelli-mocci/" target="_blank"
+        rel="noopener noreferrer external">LinkedIn</a>
+      <a class="footer-link" href="https://github.com/isabelli-mocci" target="_blank"
+        rel="noopener noreferrer external">GitHub</a>
+      <a class="footer-link" href="https://seu-portfolio.com" target="_blank"
+        rel="noopener noreferrer external">Portfólio</a>
+    </div>
+  </footer>
+
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>

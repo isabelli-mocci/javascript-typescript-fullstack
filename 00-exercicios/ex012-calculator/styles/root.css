@@ -1,0 +1,25 @@
+:root {
+  /* Default */
+  --color-background: linear-gradient(323deg, #fcd0ee, #ccdafa);
+  --color-text: #5a5a5a;
+  --color-text-links: #9a24c9;
+  --font-family-base: 'PP Neue Montreal Book', Tahoma, sans-serif;
+  --border-radius: 6px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Light Theme */
+  --color-button: #f1f1f1;
+  --color-button-pink: #f784dc;
+  --color-calculator: #f1f1f1;
+  --color-numbers: #ababab;
+  --color-screen: #f1f1f1;
+  --color-toggle-switch: #f3f3f3;
+  --color-toggle-thumb: #949494;
+  --color-toggle-thumb-after: #949494;
+
+  /* Shadows */
+  --display-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.3), inset 4px 4px 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 255, 0.2);
+  --display-shadow-focus: inset -4px -4px 10px rgba(255, 255, 255, 0.726), inset 4px 4px 10px rgba(0, 0, 0, 0.356), 0 0 10px rgba(255, 255, 255, 0.26);
+  --button-shadow: inset -5px 5px 8px #dfdfdf, inset 5px -5px 8px #ffffff;
+  --button-pink-shadow: inset 6px 6px 14px #bb63a6, inset -6px -6px 14px #fda0ee;
+}
