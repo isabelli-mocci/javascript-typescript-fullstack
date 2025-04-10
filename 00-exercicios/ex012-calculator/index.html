@@ -30,20 +30,25 @@
   <link rel="manifest" href="./assets/favicons/site.webmanifest" />
 
   <!-- Fonts & Styles -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=backspace" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   <link rel="stylesheet" href="./styles/root.css">
   <link rel="stylesheet" href="./styles/layout.css">
-  <link rel="stylesheet" href="./styles/calculator.css">
   <link rel="stylesheet" href="./styles/dark-mode.css">
+  <link rel="stylesheet" href="./styles/calculator.css">
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="canonical" href="https://isabelli-mocci.github.io/calculator/" />
 
   <title>Calculator</title>
 </head>
 
-<body class="dark-mode">
-  <button id="toggle-theme">🌙</button>
+<body>
+  <!-- TOGGLE THEME -->
+  <div class="theme-box">
+    <input type="checkbox" id="toggle-theme" aria-label="Toggle dark mode" />
+    <label for="toggle-theme" class="toggle-switch">
+      <span class="toggle-thumb"></span>
+    </label>
+  </div>
 
   <!-- CALCULATOR -->
   <main id="calculator">
@@ -51,48 +56,51 @@
 
       <!-- Display Screen -->
       <div class="display">
-        <input type="text" class="display-screen"  />
+        <input type="text" class="display-screen" readonly />
       </div>
 
       <!-- Calculator Buttons -->
       <div class="button-grid">
-        <button class="calculator-button" id="clear" aria-label="clear">c</button>
-        <button class="calculator-button">(</button>
-        <button class="calculator-button">)</button>
-        <button class="calculator-button">÷</button>
+        <button class="calculator-button clear" id="clear" aria-label="clear">c</button>
+        <button class="calculator-button" aria-label="open parenthesis">(</button>
+        <button class="calculator-button" aria-label="close parenthesis">)</button>
+        <button class="calculator-button" aria-label="divide">÷</button>
 
-        <button class="calculator-button">7</button>
-        <button class="calculator-button">8</button>
-        <button class="calculator-button">9</button>
-        <button class="calculator-button">×</button>
+        <button class="calculator-button" aria-label="seven">7</button>
+        <button class="calculator-button" aria-label="eight">8</button>
+        <button class="calculator-button" aria-label="nine">9</button>
+        <button class="calculator-button" aria-label="multiply">×</button>
 
-        <button class="calculator-button">4</button>
-        <button class="calculator-button">5</button>
-        <button class="calculator-button">6</button>
-        <button class="calculator-button">-</button>
+        <button class="calculator-button" aria-label="four">4</button>
+        <button class="calculator-button" aria-label="five">5</button>
+        <button class="calculator-button" aria-label="six">6</button>
+        <button class="calculator-button" aria-label="minus">-</button>
 
-        <button class="calculator-button">1</button>
-        <button class="calculator-button">2</button>
-        <button class="calculator-button">3</button>
-        <button class="calculator-button">+</button>
+        <button class="calculator-button" aria-label="one">1</button>
+        <button class="calculator-button" aria-label="two">2</button>
+        <button class="calculator-button" aria-label="three">3</button>
+        <button class="calculator-button" aria-label="plus">+</button>
 
-        <button class="calculator-button">.</button>
-        <button class="calculator-button">0</button>
-        <button class="calculator-button" id="backspace" aria-label="backspace"><span
+        <button class="calculator-button" aria-label="decimal point">.</button>
+        <button class="calculator-button" aria-label="zero">0</button>
+        <button class="calculator-button backspace" id="backspace" aria-label="backspace"><span
             class="material-symbols-outlined">backspace</span></button>
-        <button class="calculator-button" id="equals" aria-label="equals">=</button>
+        <button class="calculator-button equals" id="equals" aria-label="equals">=</button>
       </div>
     </div>
   </main>
 
   <!-- FOOTER -->
   <footer id="footer">
-    <p class="footer-text">Made with 💜 by Isabelli Mocci | <span id="year"></span></p>
+    <p>Made with 💜 by Isabelli Mocci | <span id="year"></span></p>
 
     <div class="footer-links">
-      <a class="footer-link" href="https://www.linkedin.com/in/isabelli-mocci/" target="_blank">LinkedIn</a>
-      <a class="footer-link" href="https://github.com/isabelli-mocci" target="_blank">GitHub</a>
-      <a class="footer-link" href="https://seu-portfolio.com" target="_blank">Portfólio</a>
+      <a class="footer-link" href="https://www.linkedin.com/in/isabelli-mocci/" target="_blank"
+        rel="noopener noreferrer external">LinkedIn</a>
+      <a class="footer-link" href="https://github.com/isabelli-mocci" target="_blank"
+        rel="noopener noreferrer external">GitHub</a>
+      <a class="footer-link" href="https://seu-portfolio.com" target="_blank"
+        rel="noopener noreferrer external">Portfólio</a>
     </div>
   </footer>
 
