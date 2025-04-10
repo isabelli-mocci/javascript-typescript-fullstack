@@ -1,18 +1,18 @@
 // =============================================================
-// Curso de JavaScript e TypeScript - Aula 40: Funções Recursivas
+// Curso de JavaScript e TypeScript - Aula 40: Recursive Functions
 // Professor: Luiz Otávio Miranda
 // Criado por: Isabelli Cristina Mocci
 // Data: 10/04/2025
 // =============================================================
 
 /*
-    🔹 Funções Recursivas
+    🔹 Recursive Functions
 
       → é quando uma função chama a si mesma
       → sempre precisa de uma condição de parada (caso base)
       → resolve problemas quebrando-os em partes menores
     
-    🔹 Quando usar funções recursivas?
+    🔹 Quando usar Recursive Functions?
 
       1. estruturas com profundidade variável (listas, árvores, etc)
       2. quando a repetição depende do próprio resultado anterior
