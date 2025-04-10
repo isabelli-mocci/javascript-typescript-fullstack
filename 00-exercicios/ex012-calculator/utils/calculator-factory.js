@@ -1,6 +1,6 @@
-// old-calculator.js
+// calculator created with factory function
 
-export function createCalculator() {
+function createCalculator() {
   return {
     display: document.querySelector('.display-screen'),
 
