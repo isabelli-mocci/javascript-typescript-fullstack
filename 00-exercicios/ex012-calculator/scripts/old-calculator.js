@@ -1,3 +1,5 @@
+// old-calculator.js
+
 export function createCalculator() {
   return {
     display: document.querySelector('.display-screen'),
