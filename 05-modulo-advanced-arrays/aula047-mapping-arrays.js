@@ -5,7 +5,7 @@
 // Data: 11/04/2025
 // =============================================================
 /*
-    🔹 Filter() Method
+    🔹 Map() Method
 
       → cria um novo array com o resultado da transformação de cada item do array original.
       → não modifica o array original.
