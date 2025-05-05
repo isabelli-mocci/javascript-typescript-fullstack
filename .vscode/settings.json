@@ -1,3 +1,6 @@
 {
-  "livePreview.defaultPreviewPath": "/secao3-JS-logica-de-programacao/ex016-calculadora-IMC/index.html"
+  "livePreview.defaultPreviewPath": "/secao3-JS-logica-de-programacao/ex016-calculadora-IMC/index.html",
+  "editor.autoClosingComments": "always",
+  "editor.unicodeHighlight.includeComments": true,
+  "better-comments.highlightPlainText": true
 }
